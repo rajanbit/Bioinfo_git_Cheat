@@ -1,15 +1,18 @@
 # Bioinfo_git_Cheat
+
 Git cheat for bioinformatics
+
+Install Git (if not installed)
 
 Configuring git username and email
 ```
-$ git config --global user.name <username>
-$ git config --global user.email <email>
+$ git config --global user.name username
+$ git config --global user.email email
 ```
 
-Clone repository
+Clone a repository
 ```
-$ git clone https://github.com/rajanbit/Bioinfo_git_Cheat.git
+$ git clone https://github.com/username/repository_name.git
 ```
 
 State of the working repository and staging area
@@ -34,11 +37,17 @@ $ git branch -M main
 
 Set a new remote
 ```
-git remote add origin https://github.com/rajanbit/Bioinfo_git_Cheat.git
+$ git remote add origin https://github.com/username/repository_name.git
 ```
+
+Generate personal access token from github.com
+```
+Profile photo -> Settings -> Developer settings -> Personal access tokens -> Generate new token -> Name token -> Select expiration time -> Select all the scopes -> Generate token
+```
+Copy token from clipboard
 
 Push changes into github repository
 ```
-git push -u origin main
+$ git push -u origin main
 ```
-
+Authentication:- username: github_username; password: personal access token
